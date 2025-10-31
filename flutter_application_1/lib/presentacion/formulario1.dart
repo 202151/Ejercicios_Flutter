@@ -39,10 +39,10 @@ int contador = 0;
       ),
       FloatingActionButton(
         onPressed: () {
-         
-
-
-         
+          if (contador > 0) {
+            contador -= 1;
+            setState(() {});
+          }
          },
         child: Icon(Icons.remove), 
       ),
